@@ -40,6 +40,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Sample
 ```ruby
+require 'array_op_custom'
+
 [1, 2, 3] + [4, 5, 6]
 #=> [5, 7, 9]
 
