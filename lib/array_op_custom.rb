@@ -7,18 +7,24 @@ module ArrayOpCustom
 end
 class Array
 	def +(other)
-		self.each_index do |i|
-			self[i] = other[i] ? self[i] + other[i] : self[i]
+		if other.class === 'Array'
+			self.each_index do |i|
+				self[i] = other[i] ? self[i] + other[i] : self[i]
+			end
 		end
 	end
 	def *(other)
-		self.each_index do |i|
-			self[i] = other[i] ? self[i] * other[i] : self[i]
+		if other.class === 'Array'
+			self.each_index do |i|
+				self[i] = other[i] ? self[i] * other[i] : self[i]
+			end
 		end
 	end
 	def -(other)
-		self.each_index do |i|
-			self[i] = other[i] ? (self[i] - other[i]).abs : self[i]
+		if other.class === 'Array'
+			self.each_index do |i|
+				self[i] = other[i] ? (self[i] - other[i]).abs : self[i]
+			end
 		end
 	end
 	def to_i
@@ -33,5 +39,5 @@ class Array
 			h[b.to_s.to_sym] = a
 		end
 		return h
-  end
+	end
 end
