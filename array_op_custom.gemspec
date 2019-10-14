@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "array_op_custom"
   spec.version       = ArrayOpCustom::VERSION
   spec.authors       = ["k-kyg"]
-  spec.email         = ["kygkd38@gmail.com"]
+  spec.email         = [""]
 
   spec.summary       = %Q(custom array's operator)
   spec.description   = <<DESC
