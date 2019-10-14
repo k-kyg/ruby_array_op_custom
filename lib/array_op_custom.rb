@@ -39,5 +39,8 @@ class Array
 			h[b.to_s.to_sym] = a
 		end
 		return h
+  end
+  def sum
+		self.reduce{|a, b| a + b}
 	end
 end

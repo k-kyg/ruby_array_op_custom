@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 Custom array's operator
 "+", "-" and "*".
 add method
-to_s, to_i, to_h.
+to_s, to_i, to_h, sum.
 DESC
   spec.homepage      = "https://github.com/k-kyg/ruby_array_op_custom"
   spec.license       = "MIT"
