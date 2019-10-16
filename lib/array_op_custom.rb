@@ -7,18 +7,36 @@ module ArrayOpCustom
 end
 class Array
 	def +(other)
-		self.each_index do |i|
-			self[i] = other[i] ? self[i] + other[i] : self[i]
+		if self.length >= other.length
+			self.each_index do |i|
+				self[i] = other[i] ? self[i] + other[i] : self[i]
+			end
+		elsif other.length > self.length
+			other.each_index do |i|
+				other[i] = self[i] ? self[i] + other[i] : other[i]
+			end
 		end
 	end
 	def *(other)
-		self.each_index do |i|
-			self[i] = other[i] ? self[i] * other[i] : self[i]
+		if self.length >= other.length
+			self.each_index do |i|
+				self[i] = other[i] ? self[i] * other[i] : self[i]
+			end
+		elsif other.length > self.length
+			other.each_index do |i|
+				other[i] = self[i] ? self[i] * other[i] : other[i]
+			end
 		end
 	end
 	def -(other)
-		self.each_index do |i|
-			self[i] = other[i] ? (self[i] - other[i]).abs : self[i]
+		if self.length >= other.length
+			self.each_index do |i|
+				self[i] = other[i] ? (self[i] - other[i]).abs : self[i]
+			end
+		elsif other.length > self.length
+			other.each_index do |i|
+				other[i] = self[i] ? (self[i] - other[i]).abs : other[i]
+			end
 		end
 	end
 	def to_i

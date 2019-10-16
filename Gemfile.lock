@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    array_op_custom (0.1.4)
+    array_op_custom (0.1.5)
 
 GEM
   remote: https://rubygems.org/
