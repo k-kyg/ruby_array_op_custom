@@ -61,6 +61,20 @@ require 'array_op_custom'
 [1, 2, 3].to_h
 #=> {:"0"=>1, :"1"=>2, :"2"=>3}
 ```
+You still can use "<<"
+But you can't use push array "+".
+You can use "==" instead of "+".
+```ruby
+arr = [1, 2, 3]
+p arr << 4
+#=> [1, 2, 3, 4]
+p arr
+#=> [1, 2, 3, 4]
+p arr == 5
+#=> [1, 2, 3, 4, 5]
+p arr
+#=> [1, 2, 3, 4]
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -39,6 +39,9 @@ class Array
 			end
 		end
 	end
+	def ==(other)
+		return self.dup.push(other)
+	end
 	def to_i
 		self.map{|i| i.to_i}
 	end
