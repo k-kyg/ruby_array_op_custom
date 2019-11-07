@@ -55,7 +55,4 @@ class Array
 		end
 		return h
   end
-  def sum
-		self.reduce{|a, b| a + b}
-	end
 end

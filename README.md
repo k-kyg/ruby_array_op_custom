@@ -1,7 +1,7 @@
 # ArrayOpCustom
 
 This gem is change operator operation about Array.
-And add method to_s, to_i, to_h, and sum.
+And add method to_s, to_i and to_h.
 
 ## Installation
 
@@ -51,9 +51,6 @@ require 'array_op_custom'
 
 [1, 2, 3].to_s
 #=> ["1", "2", "3"]
-
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].sum
-#=> 55
 
 ["1", "2", "3"].to_i
 #=> [1, 2, 3]
